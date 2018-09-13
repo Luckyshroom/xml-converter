@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.cft'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    archiveName = 'xml-converter.jar'
+    manifest {
+        attributes 'Main-Class': 'ru.cft.Main'
+    }
+}
